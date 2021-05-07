@@ -244,3 +244,48 @@ a {
 	text-align: right;
 	box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
 }
+
+/* Pantallas extra largas (ordenador, 122 px para arriba) */
+@media (max-width: 1200px){
+	body {
+		font-size: 14px;
+	}
+}
+
+/* Pantallas largas (ordenador, 922 px para arriba) */
+@media (max-width: 922px){
+	/* Volver a poner el tamaño de fuente al original porque hay más espacio */
+	body{
+		font-size: 16px;
+	}
+
+	/* Modificar plantilla de áreas para que se adapte */
+	.contenedor {
+		grid-template-areas:
+			'header			header   	header'
+			'destacado		destacado 	destacado'
+			'contenido		contenido 	contenido'
+			'aside			aside		aside'
+			'footer	 		footer 		footer';
+	}
+}
+
+/* Pantallas medias (tablets, 768 px para arriba) */
+@media (max-width: 768px){
+ /* Modificamos el tamaño del artículo destacado para que esté en una sola columna, primero texto y luego imagen */
+	.articulo.destacado {
+		grid-template-columns: 1fr;
+	}
+	/* Modificamos el tamaño de la imagen para que no sea tan grande */
+	.articulo.destacado .contenedor-thumbnail {
+		height: 16em;
+	}
+}
+
+/* Pantallas pequeñas (smartphones, 768 px para arriba) */
+@media (max-width: 576px){
+	/* cambiamos tamaño de fuente */
+	body{
+		font-size: 12px;
+	}
+}
