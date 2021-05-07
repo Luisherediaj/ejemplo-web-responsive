@@ -1,5 +1,6 @@
 # Ejemplo de una web responsive
 
+<img src="./img/version-responsive.png" alt="" />
 <p>Ejemplo de cómo adaptar una web a forma responsive para que sea vea en smartphones mediante media queries</p>
 
 <h2>Pasos:</h2>
